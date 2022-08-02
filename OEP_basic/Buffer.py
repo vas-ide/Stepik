@@ -9,8 +9,8 @@ class Buffer:
         for i in a:
             self.buffer_lst.append(i)
             if len(self.buffer_lst) == 5:
-                sum_lst = 0
-                for j in self.buffer_lst:
+                sum_lst = 0                     # print(sum(self.buffer_lst))
+                for j in self.buffer_lst:       # self.buffer_lst.clear()
                     sum_lst += j
                 print(sum_lst)
                 self.buffer_lst = []
