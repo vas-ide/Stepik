@@ -31,6 +31,23 @@ buf.get_current_part() # вернуть [1]
 
 
 
+class Song:
+    tags = []
+
+    def __init__(self, artist, song):
+        self.artist = artist
+        self.song = song
+
+    def add_tags(self, *args):
+        self.tags.extend(args)
+
+song1 = Song('Shakey Graves', 'Roll the Bones')
+print(song1.artist)
+print(song1.song)
+song1.add_tags('Americana', 'Country')
+print(song1.tags)
+
+
 
 
 
